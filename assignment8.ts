@@ -175,15 +175,15 @@
 
 
 
-// const guests: string[] = ["Rana Naveed", "Abu Hurairah", "Zia Khan"];
+const guests: string[] = ["Rana Naveed", "Abu Hurairah", "Zia Khan"];
 
-// console.log(" We have a bigger dinner table tonight! ");
-// guests.unshift('Raza')
-// guests.splice(2,0,'Shahid');
-// guests.push('Babar')
-// guests.forEach((guest) => {
-//   console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have you join us.`);
-// });
+console.log(" We have a bigger dinner table tonight! ");
+guests.unshift('Raza')
+guests.splice(2,0,'Shahid');
+guests.push('Babar')
+guests.forEach((guest) => {
+  console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have you join us.`);
+});
 
 
 //Q17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, 
@@ -197,31 +197,31 @@
 //actually have an empty list at the end of your program.
 
 
-// console.log("I'm very sorry that our dinner is re-scheduled.And for today their are only two persons invited.Thank you")
-// console.log('!*Removed persons*!')
-// const guests: string[] = ["Raza","Rana Naveed","Shahid", "Abu Hurairah", "Zia Khan","Babar"];
-// let message2:string = "You're invited to dinner tonight at my place. We'd love to have you for great food and conversation. "
+console.log("I'm very sorry that our dinner is re-scheduled.And for today their are only two persons invited.Thank you")
+console.log('!*Removed persons*!')
+const guests: string[] = ["Raza","Rana Naveed","Shahid", "Abu Hurairah", "Zia Khan","Babar"];
+let message2:string = "You're invited to dinner tonight at my place. We'd love to have you for great food and conversation. "
 
-// for (let i = guests.length-1; i>1; i--) {
-//     let message:string = `Hey ${guests.pop()?.toUpperCase()}! `
-//     console.log(message+"We are sorry but you are not invited tonight but we will arrange another dinner anyday else!\n") 
-// }
-// console.log('After removing persons!\n')
-// for (let i = 0; i < guests.length; i++) {
-//     let message:string = `Hey ${guests[i].toUpperCase()}!`
-//     console.log(message+message2,"\n") 
+for (let i = guests.length-1; i>1; i--) {
+    let message:string = `Hey ${guests.pop()?.toUpperCase()}! `
+    console.log(message+"We are sorry but you are not invited tonight but we will arrange another dinner anyday else!\n") 
+}
+console.log('After removing persons!\n')
+for (let i = 0; i < guests.length; i++) {
+    let message:string = `Hey ${guests[i].toUpperCase()}!`
+    console.log(message+message2,"\n") 
 
-// }
-// console.log('Removed persons!\n')
-// for (let i = guests.length; i>0; i--) {
-//     let message:string = `${guests.pop()?.toUpperCase()} is removed`
-//     console.log(message,"\n") 
+}
+console.log('Removed persons!\n')
+for (let i = guests.length; i>0; i--) {
+    let message:string = `${guests.pop()?.toUpperCase()} is removed`
+    console.log(message,"\n") 
    
-// }
-// console.log('Final list!\n')
-// for (let i = 0; i < guests.length; i++) {
-//        console.log('Your list contains \n'+ guests[i])
-// }
+}
+console.log('Final list!\n')
+for (let i = 0; i < guests.length; i++) {
+       console.log('Your list contains \n'+ guests[i])
+}
 
 
 //Q18. Seeing the World: Think of at least five places in the world you’d like to visit.
