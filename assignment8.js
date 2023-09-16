@@ -155,13 +155,72 @@
 //• Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 //• Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has 
 //changed.
-let locations = ['Naran', 'Murree', 'Tah Mahal', 'K2', 'Adelaide'];
-console.log(locations);
-console.log("Alphabetical Order:", [...locations].sort());
-console.log("Original Order (Unchanged):", locations);
-console.log("Reverse Alphabetical Order:", [...locations].sort().reverse());
-console.log("Original Order (Unchanged):", locations);
-locations.reverse();
-console.log("Reversed Order:", locations);
-locations.reverse();
-console.log("Back to Original Order:", locations);
+// let locations:string[]=['Naran','Murree','Tah Mahal','K2','Adelaide']
+// console.log(locations);
+// console.log("Alphabetical Order:", [...locations].sort());
+// console.log("Original Order (Unchanged):", locations);
+// console.log("Reverse Alphabetical Order:", [...locations].sort().reverse());
+// console.log("Original Order (Unchanged):", locations)
+// locations.reverse();
+// console.log("Reversed Order:", locations);
+// locations.reverse();
+// console.log("Back to Original Order:", locations);
+// locations.sort();
+// console.log("Alphabetical Order (Modified):", locations);
+// locations.sort((a, b) => b.localeCompare(a));
+// console.log("Reverse Alphabetical Order (Modified):", locations);
+//Q19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating 
+//the number of people you are inviting to dinner.
+// console.log(`The number of people invited ${guests.length}`);
+//Q20. Think of something you could store in a array. For example, you could make a list of mountains, 
+//rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list 
+//containing these items.
+// const countries: string[] = ["Pakistan", "Canada", "Australia", "Japan", "United States"];
+// console.log("Countries around the world.");
+// countries.forEach((element,index)=>{
+//     console.log(`${index+1}. ${element}`);
+// });
+//Q21: They think of something you could store in a TypeScript Object. Write a program that creates
+//Objects containing these items.
+// const citiesInfo: { [country: string]: string[] } = {
+//     "United States": ["New York", "Los Angeles", "Chicago"],
+//     "Canada": ["Toronto", "Vancouver", "Montreal"],
+//     "Australia": ["Sydney", "Melbourne", "Brisbane"],
+//     "Japan": ["Tokyo", "Kyoto", "Osaka"],
+//     "Pakistan": ["Islamabad", "Lahore", "Faisalabad"]
+//   };
+//   const selectedCountry = "Pakistan";
+// console.log(`Cities in ${selectedCountry}:`);
+// citiesInfo[selectedCountry].forEach((city, index) => {
+//   console.log(`${index + 1}. ${city}`);
+// });
+//Q22: Intentional Error: If you haven’t received an array index error in one of your programs yet, 
+//try to make one happen. Change an index in one of your programs to produce an index error. Make 
+//sure you correct the error before closing the program.
+// let numbers: number[] = [1,2,3,4,5,6,7];
+// let errorNumber = numbers[7]; // As there is no index of 7 in numbers array so it is an error 
+// console.log(errorNumber); // But compiler will show us the undefind message which is obvious
+//Q23: Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your
+//prediction for the results of each test. Your code should look something like this:
+//let car = 'subaru';
+//console.log("Is car == 'subaru'? I predict True.")
+//console.log(car == 'subaru')
+//• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+//• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+const citiesInfo = {
+    united_States: "New York",
+    canada: "Toronto",
+    australia: "Sydney",
+    japan: "Tokyo",
+    pakistan: "Islamabad"
+};
+console.log("Is inited_States == 'New York'? I predict True");
+console.log(citiesInfo.united_States == "New York");
+console.log("Is canada == 'New York'? I predict False");
+console.log(citiesInfo.canada == 'New York');
+console.log("Is australia == 'Lahore'? I predict True");
+console.log(citiesInfo.australia == 'Lahore');
+console.log("Is pakistan == 'Islamabad'? I predict True");
+console.log(citiesInfo.pakistan == 'Islamabad');
+console.log("Is japan == 'shengai'? I predict False");
+console.log(citiesInfo.japan == 'shengai');
